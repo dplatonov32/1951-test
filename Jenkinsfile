@@ -1,4 +1,4 @@
-    def lib = library identifier: 'folder@main', retriever: modernSCM(
+    def lib = library identifier: 'folder@fork-branch', retriever: modernSCM(
                                                                 [$class: 'GitSCMSource',
                                                                  remote: 'git@github.com:Pldi23/1951-test.git',
                                                                  credentialsId: 'sshpldi23'])
