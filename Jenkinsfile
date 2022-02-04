@@ -1,6 +1,6 @@
     def lib = library identifier: 'folder@main', retriever: modernSCM(
                                                                 [$class: 'GitSCMSource',
-                                                                 remote: 'git@github.com:Pldi23/1951-test.git',
+                                                                 remote: 'https://github.com/Pldi23/1951-test.git',
                                                                  credentialsId: 'pldi23'])
     greet(lib.pkg.Clazz.whereAmI())
 // if (env.CHANGE_FORK == null) {
